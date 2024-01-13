@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: 0.4s;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: #1e2019;
+}
+
+.side-bar {
+    background-color: #00916E;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    float: left;
+    color: #f0f0f0;
+}
+
+.img-holder {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.profile-pic {
+    border: 10px solid #f0f0f0;
+    margin-top: 50px;
+    border-radius: 50%;
+    clear: left;
+    height: 200px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.desc {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.collapse {
+    margin-top: 35px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    list-style: none;
+    text-align: center;
+}
+
+a {
+    color: #f0f0f0;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Quicksand", Arial, sans-serif;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section-side {
+    float: right;
+    display: grid;
+    width: 70%;
+    height: 100vh;
+}
+
+.hidden-navbar {
+    visibility: hidden;
+}
+
+label div#nav{
+    position: absolute;
+    left: -130%;
+    top: 130%;
+    width: 50vh;
+    background: #fff;
+    box-shadow: 2px 5px 5px 3px rgba(0,0,0,.4);
+    opacity: 0;
+    transition: 1s left;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 50px;
+    height: 39rem;
+    background: url("./pics/cat.jpg");
+    background-size: 45rem 40rem;
+    background-position: 30rem 18rem;
+    background-repeat: no-repeat;
+}
+
+.intro {
+    margin-top: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.coffee {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.intro-desc {
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.btn-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    height: 100px;
+    width: 400px;
+}
+
+.buttons {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.download-btn {
+    background-color: #ff4c68;
+    border-color: #ff4c68;
+    color: white;
+    transition: 0.4s;
+}
+
+.download-btn:hover {
+    border-color: #ff4c68;
+    background-color: white;
+    color: #ff4c68;
+}
+
+.portolio-btn {
+    background-color: white;
+    border-color: #00bfff;
+    color: #00bfff;
+}
+
+.portolio-btn:hover {
+    background-color: #00bfff;
+    border-color: #00bfff;
+    color: white;
+    transition: 0.4s;
+}
+
+.about-section {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #ff4c68;
+    color: black;
+}
+
+.about-main {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-body {
+    padding-left: 75px;
+    padding-right: 75px;
+    letter-spacing: 4px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-skill {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.about-skills-holder {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.expertise {
+    height: 100px;
+}
+
+
+.highlight-title {
+    margin-top: 50px;
+    padding-right: 50px;
+    float: right;
+    display: inline;
+}
+
+.portfolio-title {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #00bfff;
+}
+
+.portfolio-title-bold {
+    color: #ff4c68;
+    font-size: 50px;
+}
+
+.portfolio-box {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.portfolio-border {
+    border-radius: 5px;
+}
+
+.portfolio-tindog {
+    box-shadow: 5px 5px #00bfff;
+}
+
+.portfolio-litcat {
+    box-shadow: 5px 5px #ff4c68;
+}
+
+.portfolio-name {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolio-desc {
+    margin: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.portfolio-skills-holder {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.portfolio-btn {
+    background-color: white;
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.button-tindog {
+    border: 3px solid #ff4c68;
+    background-color: #ff4c68;
+    transition: 0.4s;
+}
+
+.button-litcat {
+    border: 3px solid #00bfff;
+    color: #00bfff;
+    transition: 0.4s;
+}
+
+.button-tindog:hover {
+    border: 3px solid #ff4c68;
+    background-color: white;
+    color: #ff4c68;
+}
+
+.button-litcat:hover {
+    border: 3px solid #00bfff;
+    background-color: #00bfff;
+    color: white;
+}
+
+.footer-section {
+    padding: 50px;
+    background-color:#00bfff;
+}
+
+.footer-img-holder {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons {
+    height: 50px;
+}
+
+.heading-reg {
+    color: #00bfff;
+    font-size: 7vh;
+}
+
+.redf {
+    color: #ff4c68;
+}
+
+.reg-inp {
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    margin-top: 10px;
+    height: 20px;
+    width: 40vh;
+    :hover {
+        border-color: #ccc;
+    }
+    :focus{
+        border-color: #9147ff;
+        background: #fff;
+    }
+}
+
+.register-btn {
+    margin-top: 20px;
+    color: #ff4c68;
+    border: 1px solid #ff4c68;
+    width: 200px;
+}
+
+.register-btn:hover {
+    border-color: #ff4c68;
+    background-color: white;
+    color: #ff4c68;
+}
+
+.acc-details {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
